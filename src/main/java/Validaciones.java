@@ -4,6 +4,7 @@ public  class Validaciones {
 
     //Crear todas las clases en estaticas
     public static boolean comprobarnombre(String nombre) {
+        nombre=nombre.toLowerCase();
         int i;
         boolean comprobar= true;
         for (i = 0; i < nombre.length(); i++) {
@@ -61,7 +62,7 @@ public  class Validaciones {
         }
 
 
-    public static boolean validarTelefono(String telefono){
+    public static boolean comprobartelefono(String telefono){
         boolean comprobar=true;
         telefono = telefono.replace(" ", "");
         telefono = telefono.replace("-", "");
